@@ -1,0 +1,134 @@
+/* General */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: medium;
+    background-color: #19172e;
+    color: #ffffff;
+}
+
+hr {
+    color: #ffffff;
+}
+
+/* App */
+.container {
+    background-color: #3d3c7c;
+    margin: 50px 140px 30px 140px;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.container h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.info span {
+    margin: 0 5px 0 0;
+}
+
+/* Escribir y añadir tareas */
+.escribir-y-anadir {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 20px 0;
+}
+
+.escribir-tarea {
+    padding: 10px 100px 10px 15px;
+    outline: 0;
+    border: 0;
+    background-color: #4605ff;
+    border-radius: 1.5rem;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.anadir {
+    cursor: pointer;
+    font-size: 2rem;
+    color: #ffffff;
+    margin: 0 0 0 25px;
+    padding: 1rem;
+    border: 0;
+    background-color: #33ff21;
+    border-radius: 1.5rem;
+}
+
+/* Tareas */
+.tarea-1,
+.tarea-2,
+.tarea-3,
+.tarea-4,
+.tarea-5 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tarea-1 p,
+.tarea-2 p,
+.tarea-3 p,
+.tarea-4 p,
+.tarea-5 p {
+    padding: 10px 100px 10px 15px;
+    background-color: #2eafcb;
+    font-size: 2rem;
+    margin: 20px 20px 0 0;
+    border-radius: 1.5rem;
+    width: 45vw;
+}
+
+.editar-tarea1,
+.editar-tarea2,
+.editar-tarea3,
+.editar-tarea4,
+.editar-tarea5 {
+    cursor: pointer;
+    background-color: #fff73d;
+    color: #ffffff;
+    padding: 1.25rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    margin: 20px 20px 0 0;
+    border-radius: 1.5rem;
+}
+
+.eliminar-tarea1,
+.eliminar-tarea2,
+.eliminar-tarea3,
+.eliminar-tarea4,
+.eliminar-tarea5 {
+    cursor: pointer;
+    background-color: #ff3838;
+    color: #ffffff;
+    padding: 1.25rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    margin: 20px 0 0 0;
+    border-radius: 1.5rem;
+}
+
+/* Creditos propios */
+h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0 0 40px 0;
+}
+
+h3 a {
+    color: #2eafcb;
+    text-decoration: underline;
+}
