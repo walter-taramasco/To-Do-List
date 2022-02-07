@@ -43,37 +43,59 @@ hr {
 .escribir-y-anadir {
     display: flex;
     align-items: center;
-    margin: 10px 0 20px 0;
+    flex-direction: row;
+    margin: 1rem 0 2rem 0;
 }
 
 .escribir-tarea {
-    padding: 10px 100px 10px 15px;
+    padding: 1rem 10rem 1rem 1.5rem;
     outline: 0;
     border: 0;
     background-color: #4605ff;
     border-radius: 1.5rem;
     font-size: 2rem;
     color: #ffffff;
+    width: 40vw;
 }
 
 .anadir {
     cursor: pointer;
     font-size: 2rem;
     color: #ffffff;
-    margin: 0 0 0 25px;
+    margin: 0 0 0 2.5rem;
     padding: 1rem;
     border: 0;
     background-color: #33ff21;
     border-radius: 1.5rem;
+    pointer-events: none;
+    opacity: 0.6;
 }
 
 /* Tareas */
+#tarea1 {
+    display: none;
+}
+
+#tarea2 {
+    display: none;
+}
+
+#tarea3 {
+    display: none;
+}
+
+#tarea4 {
+    display: none;
+}
+
+#tarea5 {
+    display: none;
+}
 .tarea-1,
 .tarea-2,
 .tarea-3,
 .tarea-4,
 .tarea-5 {
-    display: flex;
     flex-direction: row;
     align-items: center;
 }
@@ -83,10 +105,10 @@ hr {
 .tarea-3 p,
 .tarea-4 p,
 .tarea-5 p {
-    padding: 10px 100px 10px 15px;
+    padding: 1rem 10rem 1rem 1.5rem;
     background-color: #2eafcb;
     font-size: 2rem;
-    margin: 20px 20px 0 0;
+    margin: 2rem 2rem 0 0;
     border-radius: 1.5rem;
     width: 45vw;
 }
@@ -102,7 +124,7 @@ hr {
     padding: 1.25rem;
     width: 2.4rem;
     height: 2.4rem;
-    margin: 20px 20px 0 0;
+    margin: 2rem 2rem 0 0;
     border-radius: 1.5rem;
 }
 
@@ -117,7 +139,7 @@ hr {
     padding: 1.25rem;
     width: 2.4rem;
     height: 2.4rem;
-    margin: 20px 0 0 0;
+    margin: 2rem 0 0 0;
     border-radius: 1.5rem;
 }
 
@@ -125,10 +147,80 @@ hr {
 h3 {
     font-size: 1.5rem;
     text-align: center;
-    margin: 0 0 40px 0;
+    margin: 0 0 4rem 0;
 }
 
 h3 a {
     color: #2eafcb;
     text-decoration: underline;
+}
+
+/* Queries */
+@media screen and (max-width: 805px) {
+    .container {
+        margin: 50px 60px 30px 60px;
+    }
+}
+@media screen and (max-width: 651px) {
+    .container {
+        margin: 50px 30px 30px 30px;
+    }
+}
+@media screen and (max-width: 583px) {
+    .escribir-tarea {
+        padding: 1rem 0.5rem 1rem 1.5rem;
+    }
+    .tarea-1 p,
+    .tarea-2 p,
+    .tarea-3 p,
+    .tarea-4 p,
+    .tarea-5 p {
+        padding: 1rem 2rem 1rem 1.5rem;
+    }
+}
+@media screen and (max-width: 491px) {
+    .escribir-tarea {
+        width: 20rem;
+    }
+}
+@media screen and (max-width: 439px) {
+    .escribir-tarea {
+        width: 13rem;
+    }
+}
+@media screen and (max-width: 427px) {
+    .tarea-1 p,
+    .tarea-2 p,
+    .tarea-3 p,
+    .tarea-4 p,
+    .tarea-5 p,
+    .escribir-tarea,
+    .anadir {
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 351px) {
+    .escribir-tarea {
+        width: 10rem;
+    }
+}
+@media screen and (max-width: 339px) {
+    .tarea-1 p,
+    .tarea-2 p,
+    .tarea-3 p,
+    .tarea-4 p,
+    .tarea-5 p,
+    .escribir-tarea,
+    .anadir {
+        font-size: 1.2rem;
+    }
+    h3 {
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 309px) {
+    .container {
+        margin: 30px 0 30px 0;
+        padding: 15px;
+    }
 }

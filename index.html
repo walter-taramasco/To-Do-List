@@ -29,57 +29,61 @@
             <p class="info">
                 <span class="material-icons"> info </span> Máximo 5 tareas!
             </p>
-            <div class="escribir-y-anadir">
+            <form class="escribir-y-anadir">
                 <input
+                    type="text"
                     class="escribir-tarea"
+                    id="input-escribir"
                     placeholder="Escribe tu tarea aqui..."
+                    onkeyup="clickEscribir()"
                 />
-                <button class="anadir">Añadir</button>
-            </div>
-            <link rel="shortcut icon" href="favicon.png" />
+                <button type="submit" id="anadirtarea" class="anadir">
+                    Añadir
+                </button>
+            </form>
             <hr />
-            <div class="tarea-1">
-                <p class="nombre-tarea1">Crear una empresa multimillonaria</p>
-                <div class="editar-tarea1">
+            <div class="tarea-1" id="tarea1">
+                <p class="nombre-tarea1" id="nombretarea1"></p>
+                <div class="editar-tarea1" id="editartarea1">
                     <span class="material-icons">edit</span>
                 </div>
-                <div class="eliminar-tarea1">
+                <div class="eliminar-tarea1" id="eliminartarea1">
                     <span class="material-icons">delete</span>
                 </div>
             </div>
-            <div class="tarea-2">
-                <p class="nombre-tarea2">Recordar todos los acordes</p>
-                <div class="editar-tarea2">
+            <div class="tarea-2" id="tarea2">
+                <p class="nombre-tarea2" id="nombretarea2"></p>
+                <div class="editar-tarea2" id="editartarea2">
                     <span class="material-icons">edit</span>
                 </div>
-                <div class="eliminar-tarea2">
+                <div class="eliminar-tarea2" id="eliminartarea2">
                     <span class="material-icons">delete</span>
                 </div>
             </div>
-            <div class="tarea-3">
-                <p class="nombre-tarea3">Acordarse de las escalas de acordes</p>
-                <div class="editar-tarea3">
+            <div class="tarea-3" id="tarea3">
+                <p class="nombre-tarea3" id="nombretarea3"></p>
+                <div class="editar-tarea3" id="editartarea3">
                     <span class="material-icons">edit</span>
                 </div>
-                <div class="eliminar-tarea3">
+                <div class="eliminar-tarea3" id="eliminartarea3">
                     <span class="material-icons">delete</span>
                 </div>
             </div>
-            <div class="tarea-4">
-                <p class="nombre-tarea4">Crear una To Do List</p>
-                <div class="editar-tarea4">
+            <div class="tarea-4" id="tarea4">
+                <p class="nombre-tarea4" id="nombretarea4"></p>
+                <div class="editar-tarea4" id="editartarea4">
                     <span class="material-icons">edit</span>
                 </div>
-                <div class="eliminar-tarea4">
+                <div class="eliminar-tarea4" id="eliminartarea4">
                     <span class="material-icons">delete</span>
                 </div>
             </div>
-            <div class="tarea-5">
-                <p class="nombre-tarea5">Crear una página web</p>
-                <div class="editar-tarea5">
+            <div class="tarea-5" id="tarea5">
+                <p class="nombre-tarea5" id="nombretarea5"></p>
+                <div class="editar-tarea5" id="editartarea5">
                     <span class="material-icons">edit</span>
                 </div>
-                <div class="eliminar-tarea5">
+                <div class="eliminar-tarea5" id="eliminartarea5">
                     <span class="material-icons">delete</span>
                 </div>
             </div>
