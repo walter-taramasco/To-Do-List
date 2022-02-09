@@ -29,7 +29,7 @@
             <p class="info">
                 <span class="material-icons"> info </span> Máximo 5 tareas!
             </p>
-            <form class="escribir-y-anadir">
+            <div class="escribir-y-anadir">
                 <input
                     type="text"
                     class="escribir-tarea"
@@ -37,53 +37,58 @@
                     placeholder="Escribe tu tarea aqui..."
                     onkeyup="clickEscribir()"
                 />
-                <button type="submit" id="anadirtarea" class="anadir">
-                    Añadir
+                <button onclick="clickAñadir()" id="anadirtarea" class="anadir">
+                    <p>Añadir <span class="material-icons"> add </span></p>
                 </button>
-            </form>
+            </div>
             <hr />
             <div class="tarea-1" id="tarea1">
                 <p class="nombre-tarea1" id="nombretarea1"></p>
-                <div class="editar-tarea1" id="editartarea1">
-                    <span class="material-icons">edit</span>
-                </div>
-                <div class="eliminar-tarea1" id="eliminartarea1">
+                <div
+                    onclick="eliminarTarea1()"
+                    class="eliminar-tarea1"
+                    id="eliminartarea1"
+                >
                     <span class="material-icons">delete</span>
                 </div>
             </div>
             <div class="tarea-2" id="tarea2">
                 <p class="nombre-tarea2" id="nombretarea2"></p>
-                <div class="editar-tarea2" id="editartarea2">
-                    <span class="material-icons">edit</span>
-                </div>
-                <div class="eliminar-tarea2" id="eliminartarea2">
+                <div
+                    onclick="eliminarTarea2()"
+                    class="eliminar-tarea2"
+                    id="eliminartarea2"
+                >
                     <span class="material-icons">delete</span>
                 </div>
             </div>
             <div class="tarea-3" id="tarea3">
                 <p class="nombre-tarea3" id="nombretarea3"></p>
-                <div class="editar-tarea3" id="editartarea3">
-                    <span class="material-icons">edit</span>
-                </div>
-                <div class="eliminar-tarea3" id="eliminartarea3">
+                <div
+                    onclick="eliminarTarea3()"
+                    class="eliminar-tarea3"
+                    id="eliminartarea3"
+                >
                     <span class="material-icons">delete</span>
                 </div>
             </div>
             <div class="tarea-4" id="tarea4">
                 <p class="nombre-tarea4" id="nombretarea4"></p>
-                <div class="editar-tarea4" id="editartarea4">
-                    <span class="material-icons">edit</span>
-                </div>
-                <div class="eliminar-tarea4" id="eliminartarea4">
+                <div
+                    onclick="eliminarTarea4()"
+                    class="eliminar-tarea4"
+                    id="eliminartarea4"
+                >
                     <span class="material-icons">delete</span>
                 </div>
             </div>
             <div class="tarea-5" id="tarea5">
                 <p class="nombre-tarea5" id="nombretarea5"></p>
-                <div class="editar-tarea5" id="editartarea5">
-                    <span class="material-icons">edit</span>
-                </div>
-                <div class="eliminar-tarea5" id="eliminartarea5">
+                <div
+                    onclick="eliminarTarea5()"
+                    class="eliminar-tarea5"
+                    id="eliminartarea5"
+                >
                     <span class="material-icons">delete</span>
                 </div>
             </div>
